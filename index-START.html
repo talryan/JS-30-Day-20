@@ -10,7 +10,7 @@
   </div>
 
 <script>
-  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; // for chrome only
 
   const recognition = new SpeechRecognition();
   recognition.interimResults = true; 
@@ -35,7 +35,7 @@
   recognition.addEventListener('end', recognition.start);
   recognition.start();
 
-
+//psuedocode
 </script>
 
 
